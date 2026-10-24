@@ -1,0 +1,43 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+venv/
+
+# Antigravity & OS metadata
+.antigravity/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Datasets and Media files (Strictly forbidden from being committed)
+data/
+datasets/
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Local cache directories
+feats/
+cache/
+artifacts/
+logs/
+results/
+vendor/
+checkpoints/
+
+# IDE files
+.vscode/
+.idea/
