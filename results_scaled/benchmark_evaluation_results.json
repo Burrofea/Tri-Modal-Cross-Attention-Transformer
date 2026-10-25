@@ -1,0 +1,247 @@
+{
+  "Proposed (Tri-Modal + Dynamic Gating)": {
+    "any_fake": {
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.4976303317535545,
+      "precision": 0.9813084112149533,
+      "recall": 0.995260663507109,
+      "f1": 0.9882352941176471,
+      "roc_auc": 0.985781990521327,
+      "pr_auc": 0.9997331814101544,
+      "ece": 0.01168057031409685,
+      "threshold": 0.63
+    },
+    "video_fake": {
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.9879227053140096,
+      "precision": 1.0,
+      "recall": 0.9758454106280193,
+      "f1": 0.9877750611246944,
+      "roc_auc": 0.9879227053140097,
+      "pr_auc": 0.9995434999122496,
+      "ece": 0.010791317252225653,
+      "threshold": 0.39
+    },
+    "audio_fake": {
+      "accuracy": 0.9627906976744186,
+      "balanced_accuracy": 0.8518518518518519,
+      "precision": 0.9591836734693877,
+      "recall": 1.0,
+      "f1": 0.9791666666666666,
+      "roc_auc": 0.94602048857368,
+      "pr_auc": 0.9907140096271851,
+      "ece": 0.06588897878347441,
+      "threshold": 0.76
+    }
+  },
+  "Ablation: Tri-Modal without Gating": {
+    "any_fake": {
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.4976303317535545,
+      "precision": 0.9813084112149533,
+      "recall": 0.995260663507109,
+      "f1": 0.9882352941176471,
+      "roc_auc": 0.985781990521327,
+      "pr_auc": 0.9997331814101544,
+      "ece": 0.011141748345175454,
+      "threshold": 0.63
+    },
+    "video_fake": {
+      "accuracy": 0.9720930232558139,
+      "balanced_accuracy": 0.9254227053140096,
+      "precision": 0.9950738916256158,
+      "recall": 0.9758454106280193,
+      "f1": 0.9853658536585366,
+      "roc_auc": 0.9867149758454106,
+      "pr_auc": 0.9994979158861066,
+      "ece": 0.013867679446242577,
+      "threshold": 0.39
+    },
+    "audio_fake": {
+      "accuracy": 0.9627906976744186,
+      "balanced_accuracy": 0.8518518518518519,
+      "precision": 0.9591836734693877,
+      "recall": 1.0,
+      "f1": 0.9791666666666666,
+      "roc_auc": 0.9452324665090622,
+      "pr_auc": 0.990598048908923,
+      "ece": 0.06833853777064834,
+      "threshold": 0.76
+    }
+  },
+  "Ablation: Audio + Video (No rPPG)": {
+    "any_fake": {
+      "accuracy": 0.9813953488372092,
+      "balanced_accuracy": 0.990521327014218,
+      "precision": 1.0,
+      "recall": 0.981042654028436,
+      "f1": 0.9904306220095693,
+      "roc_auc": 0.9869668246445498,
+      "pr_auc": 0.999755015920784,
+      "ece": 0.021101066539453907,
+      "threshold": 0.63
+    },
+    "video_fake": {
+      "accuracy": 0.9720930232558139,
+      "balanced_accuracy": 0.8653381642512077,
+      "precision": 0.9902439024390244,
+      "recall": 0.9806763285024155,
+      "f1": 0.9854368932038835,
+      "roc_auc": 0.9836956521739131,
+      "pr_auc": 0.9993840771118845,
+      "ece": 0.02279369304346484,
+      "threshold": 0.39
+    },
+    "audio_fake": {
+      "accuracy": 0.958139534883721,
+      "balanced_accuracy": 0.8491922773837668,
+      "precision": 0.958974358974359,
+      "recall": 0.9946808510638298,
+      "f1": 0.9765013054830287,
+      "roc_auc": 0.960795902285264,
+      "pr_auc": 0.9932105498546057,
+      "ece": 0.05197502804356952,
+      "threshold": 0.76
+    }
+  },
+  "Ablation: Audio-Only": {
+    "any_fake": {
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.6202606635071091,
+      "precision": 0.9858490566037735,
+      "recall": 0.990521327014218,
+      "f1": 0.9881796690307328,
+      "roc_auc": 0.9834123222748814,
+      "pr_auc": 0.9996875199567987,
+      "ece": 0.0991783990416416,
+      "threshold": 0.63
+    },
+    "video_fake": {
+      "accuracy": 0.9627906976744186,
+      "balanced_accuracy": 0.5,
+      "precision": 0.9627906976744186,
+      "recall": 1.0,
+      "f1": 0.981042654028436,
+      "roc_auc": 0.9782608695652174,
+      "pr_auc": 0.9991767893922101,
+      "ece": 0.14252885039462598,
+      "threshold": 0.39
+    },
+    "audio_fake": {
+      "accuracy": 0.958139534883721,
+      "balanced_accuracy": 0.8650512214342001,
+      "precision": 0.9637305699481865,
+      "recall": 0.9893617021276596,
+      "f1": 0.9763779527559056,
+      "roc_auc": 0.952915681639086,
+      "pr_auc": 0.990842449949919,
+      "ece": 0.1200309251630029,
+      "threshold": 0.76
+    }
+  },
+  "Ablation: Video-Only": {
+    "any_fake": {
+      "accuracy": 0.958139534883721,
+      "balanced_accuracy": 0.9786729857819905,
+      "precision": 1.0,
+      "recall": 0.957345971563981,
+      "f1": 0.9782082324455206,
+      "roc_auc": 0.985781990521327,
+      "pr_auc": 0.9997331814101547,
+      "ece": 0.11185945022937864,
+      "threshold": 0.63
+    },
+    "video_fake": {
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.9879227053140096,
+      "precision": 1.0,
+      "recall": 0.9758454106280193,
+      "f1": 0.9877750611246944,
+      "roc_auc": 0.9903381642512077,
+      "pr_auc": 0.9996350448366226,
+      "ece": 0.10014572905939678,
+      "threshold": 0.39
+    },
+    "audio_fake": {
+      "accuracy": 0.9441860465116279,
+      "balanced_accuracy": 0.8412135539795114,
+      "precision": 0.9583333333333334,
+      "recall": 0.9787234042553191,
+      "f1": 0.968421052631579,
+      "roc_auc": 0.9594168636721828,
+      "pr_auc": 0.993506577237328,
+      "ece": 0.13305347284605337,
+      "threshold": 0.76
+    }
+  },
+  "Baseline: rPPG-Only Transformer": {
+    "any_fake": {
+      "accuracy": 0.9627906976744186,
+      "balanced_accuracy": 0.5,
+      "precision": 0.9627906976744186,
+      "recall": 1.0,
+      "f1": 0.981042654028436,
+      "roc_auc": 0.7705314009661836,
+      "pr_auc": 0.9898540744932912,
+      "ece": 0.06746247951374497,
+      "threshold": 0.1
+    },
+    "video_fake": {
+      "accuracy": 0.9627906976744186,
+      "balanced_accuracy": 0.5,
+      "precision": 0.9627906976744186,
+      "recall": 1.0,
+      "f1": 0.981042654028436,
+      "roc_auc": 0.7705314009661836,
+      "pr_auc": 0.9898540744932912,
+      "ece": 0.06746247951374497,
+      "threshold": 0.1
+    },
+    "audio_fake": {
+      "roc_auc": 0.5,
+      "accuracy": 0.5,
+      "f1": 0.0
+    }
+  },
+  "subgroup_fairness_audit": {
+    "race": {
+      "African": {
+        "count": 34,
+        "auc_full_trimodal": 0.9706,
+        "auc_without_rppg": 0.9706
+      },
+      "Asian (East)": {
+        "count": 26,
+        "auc_full_trimodal": 1.0,
+        "auc_without_rppg": 1.0
+      },
+      "Asian (South)": {
+        "count": 34,
+        "auc_full_trimodal": 1.0,
+        "auc_without_rppg": 0.9706
+      },
+      "Caucasian (American)": {
+        "count": 61,
+        "auc_full_trimodal": 1.0,
+        "auc_without_rppg": 0.9836
+      },
+      "Caucasian (European)": {
+        "count": 60,
+        "auc_full_trimodal": 0.9911,
+        "auc_without_rppg": 0.9911
+      }
+    },
+    "gender": {
+      "men": {
+        "count": 109,
+        "auc_full_trimodal": 1.0,
+        "auc_without_rppg": 1.0
+      },
+      "women": {
+        "count": 106,
+        "auc_full_trimodal": 0.9706,
+        "auc_without_rppg": 0.973
+      }
+    }
+  }
+}
